@@ -1,61 +1,93 @@
-:root {
-    --primary-color: #F4E04D;
-    --secondary-color: #8DB1AB;
-    --accent1-color: #F2ED6F;
-    --accent2-color: #587792;
-    --accent3-color: #333333;
-    --heading-font: "Libre Baskerville", sans-serif;
-    --body-font: "Cabin", sans-serif;
-}
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: var(--body-font);
-    color: var(--accent3-color);
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
 }
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+
+header {
+    background: #F4E04D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-h1, h2 {
-    font-family: var(--headng-font);
-    color: var(--primary-color);
+
+header img {
+    height: 60px;
 }
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-.socialmedia a {
+
+nav a {
+    margin-left: 20px;
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
+
 .hero {
     position: relative;
+    width: 100%;
 }
+
 .hero img {
+    width: 100%;
     display: block;
-    width: 100%;
-    height: auto;
 }
-h1 {
+
+.hero-text {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding:16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent2-color);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
     color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
 }
-.hero article img {
-    float: right;
-    width: 125px;
-    position: absolute;
-    top: 20px;
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.history img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.adventure {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.adventure-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #8DB1AB;
+    padding: 20px;
+    text-align: center;
+}
+
+.socialmedia img {
+    width: 30px;
+    margin: 0 10px;
 }
