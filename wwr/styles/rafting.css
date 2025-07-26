@@ -98,6 +98,11 @@ footer {
     text-align: center;
 }
 
+.footer-text {
+    color: #fff; /* Or any color you want */
+    font-size: 0.9rem;
+}
+
 .socialmedia img {
     width: 30px;
     margin: 0 10px;
