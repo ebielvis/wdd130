@@ -71,14 +71,25 @@ nav a {
 
 .adventure-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     margin-top: 20px;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    text-align: center;
 }
 
 .adventure-grid img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+.adventure-grid figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 footer {
