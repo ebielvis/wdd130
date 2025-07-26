@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #F4E04D;
+    --secondary-color: #8DB1AB;
+    --accent1-color: #F2ED6F;
+    --accent2-color: #587792;
+    --accent3-color: #333333;
+    --heading-font: "Libre Baskerville", serif;
+    --body-font: "Cabin", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +15,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: var(--body-font);
+    color: var(--accent3-color);
     line-height: 1.5;
 }
 
+/* ===== HEADER (Flex) ===== */
 header {
-    background: #F4E04D;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,13 +33,18 @@ header img {
     height: 60px;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
-    margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: var(--accent3-color);
     font-weight: bold;
 }
 
+/* ===== HERO ===== */
 .hero {
     position: relative;
     width: 100%;
@@ -44,13 +60,18 @@ nav a {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0,0,0,0.6);
+    background: rgba(88, 119, 146, 0.8);
     color: #fff;
     padding: 10px 20px;
-    text-align: center;
     border-radius: 5px;
+    text-align: center;
 }
 
+.hero-text h1 {
+    font-family: var(--heading-font);
+}
+
+/* ===== HISTORY SECTION (Grid) ===== */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -64,16 +85,30 @@ nav a {
     border-radius: 8px;
 }
 
+.history h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== ADVENTURE SECTION (Grid) ===== */
 .adventure {
     text-align: center;
     padding: 40px 20px;
+}
+
+.adventure h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    margin-bottom: 20px;
 }
 
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin-top: 20px;
 }
 
 .adventure-grid figure {
@@ -89,21 +124,30 @@ nav a {
 .adventure-grid figcaption {
     margin-top: 5px;
     font-size: 0.9rem;
-    color: #333;
+    color: var(--accent3-color);
 }
 
+/* ===== FOOTER (Flex) ===== */
 footer {
-    background: #8DB1AB;
+    background: var(--secondary-color);
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-text {
-    color: #fff; /* Or any color you want */
-    font-size: 0.9rem;
+.socialmedia {
+    display: flex;
+    gap: 20px;
 }
 
 .socialmedia img {
     width: 30px;
-    margin: 0 10px;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
