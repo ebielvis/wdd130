@@ -159,16 +159,36 @@ footer {
   margin: auto;
 }
 
+.team {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
 .team-profiles {
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .team-profiles figure {
-  text-align: center;
   width: 200px;
+  margin: 0;
+}
+
+.team-profiles img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.team-profiles figcaption {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .contact-form {
