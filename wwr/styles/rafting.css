@@ -153,13 +153,15 @@ footer {
 }
 
 /* ===== CONTACT US SECTION ===== */
-.contact-info, .contact-form-section, .team {
+.contact-info, .contact-form-section{
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
 .team {
+  max-width: 1000px;
+  margin: auto;
   padding: 2rem;
   background-color: #f9f9f9;
   text-align: center;
@@ -197,12 +199,14 @@ footer {
   gap: 1rem;
 }
 
-.contact-form input, .contact-form textarea, .contact-form button {
+.contact-form input, .contact-form textarea{
   padding: 0.75rem;
   font-size: 1rem;
 }
 
 .contact-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
   background-color: #004e89;
   color: white;
   border: none;
