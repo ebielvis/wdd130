@@ -213,3 +213,11 @@ footer {
   cursor: pointer;
 }
 
+.radio-group, .checkbox-group {
+  margin-bottom: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
