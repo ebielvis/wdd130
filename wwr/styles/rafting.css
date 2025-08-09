@@ -234,3 +234,69 @@ footer {
         font-size: 1.5rem;
     }
 }
+/* === Trips Page Layout === */
+.trips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.trips-container article {
+    flex: 1 1 300px; 
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-container article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trips-container article h3,
+.trips-container article p {
+    padding: 0.75rem 1rem;
+}
+
+.trips-container article a {
+    display: inline-block;
+    margin: 0.75rem 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.trips-container article a:hover {
+    background-color: #005fa3;
+}
+
+/* ===== ADVENTURE SECTION  ===== */
+.adventure-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.adventure-grid figure {
+    flex: 1 1 200px; 
+    max-width: 250px;
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
