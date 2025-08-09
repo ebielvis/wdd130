@@ -300,3 +300,24 @@ footer {
     height: auto;
     border-radius: 6px;
 }
+
+/* ===== INFO GRID (Home Page) ===== */
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-grid img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.info-grid p {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
