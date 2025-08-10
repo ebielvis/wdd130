@@ -321,3 +321,14 @@ footer {
     flex: 1 1 300px;
     max-width: 500px;
 }
+
+.trips-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a5d84; 
+    font-weight: bold;
+    border-bottom: 3px solid #2a5d84;
+    display: inline-block;
+    padding-bottom: 5px;
+}
